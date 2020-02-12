@@ -1,0 +1,34 @@
+#menu{
+	background-color:#4b4b4b;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.centralImage{
+	position:fixed;
+	width:20vh;
+	height:20vh;
+	top:calc( (100vh - 20vh)/2 );
+	left:calc( (100vw - 20vh)/2 );
+	image-rendering: pixelated;
+	display: block;
+}
+#maxScore{
+	position:fixed;
+	bottom:5vh;
+	color:#E32636;
+	text-align:center;
+	width:100vw;
+}
+#wordsToDo{
+	position:fixed;
+	top:calc( (100vh - 20vh )/2 + 21vh );
+	width:100vw;
+	text-align:center;
+	font-family: Menu-font;
+	color:black;
+}
+@font-face {
+	font-family: "Menu-font";
+	src: url("fonts/menuFont.ttf");
+}

@@ -1,0 +1,13 @@
+#controller{
+	position:fixed;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	height:100vh;
+}
+
+.controllerButton{
+	width:50vw;
+}

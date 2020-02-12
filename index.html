@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/general.css">
+		
+		<!-- visualisation -->
+		<link rel="stylesheet" href="styles/background.css">
+		<link rel="stylesheet" href="styles/road.css">
+		<link rel="stylesheet" href="styles/rail.css">
+		<link rel="stylesheet" href="styles/train.css">
+		<link rel="stylesheet" href="styles/backgroundObjects.css">
+		<link rel="stylesheet" href="styles/menu.css">
+		<link rel="stylesheet" href="styles/score.css">
+		
+		<!-- controller -->
+		<link rel="stylesheet" href="styles/controller.css">
+		
+		<link rel="stylesheet" href="styles/text.css">
+		
+	</head>
+	<body>
+		<!-- background screen -->
+		<div class="gameScreen">
+			<div id="leftBackground" class="background">
+				<img class="animatedBackground animatedBackgroundSides leftBackgroundImage" src="images/map/0/-1.png"/>
+				<img class="animatedBackground animatedBackgroundSides leftBackgroundImage" src="images/map/0/-1.png"/>
+				<img class="animatedBackground animatedBackgroundSides leftBackgroundImage" src="images/map/0/-1.png"/>
+			</div>
+			<div id="centreBackground" class="roadWidth">
+				<img class="animatedBackground roadWidth centreBackgroundImage" src="images/map/0/0.png"/>
+				<img class="animatedBackground roadWidth centreBackgroundImage" src="images/map/0/0.png"/>
+				<img class="animatedBackground roadWidth centreBackgroundImage" src="images/map/0/0.png"/>
+			</div>
+			<div id="rightBackground" class="background">
+				<img class="animatedBackground animatedBackgroundSides rightBackgroundImage" src="images/map/0/1.png"/>
+				<img class="animatedBackground animatedBackgroundSides rightBackgroundImage" src="images/map/0/1.png"/>
+				<img class="animatedBackground animatedBackgroundSides rightBackgroundImage" src="images/map/0/1.png"/>
+			</div>
+		</div>
+		<!-- action screen -->
+		<div class="gameScreen">
+			<div class="background">
+			</div>
+			<div id="road" class="roadWidth">
+				<img class="trainPositioning" id="train" src="images/train/0.gif"/>
+				<img class="trainPositioning" id="trainBurst" src="images/train/burst.gif"/>
+			</div>
+			<div class="background">
+			</div>
+		</div>
+		<!-- score -->
+		<div class="gameScreen">
+			<div class="text" id="score">0</div>
+		</div>
+		<!-- controllers -->
+		<div id="controller">
+			<div class="controllerButton" id="leftController">
+			</div>
+			<div class="controllerButton" id="rightController">
+			</div>
+		</div>
+		
+		<!-- menu -->
+		<div class="gameScreen" id="menu" style="background-image:url('images/menu/1.png')">
+			<img class="centralImage" id="centralImageMenu" src="images/menu/0.png"/>
+			<div class="text" id="wordsToDo">
+				kalama
+				<br>
+				<br>
+				If you invalid tweet us <span style="color:#00FFFF;">#GGJaccess</span>
+			</div>
+			<div class="text scoreFont" id="maxScore">
+				The highest limit number of points earned: 0
+			</div>
+		</div>
+		
+		<!-- utility -->
+		<script src="js/random.js"></script>
+		
+		
+		<script src="js/engine.js"></script>
+		<script src="js/rails.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/lose.js"></script>
+		<script src="js/media.js"></script>
+		<script src="js/backgroundObjects.js"></script>
+		<script src="js/animatedBackground.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/score.js"></script>
+		<script src="js/changeBackground.js"></script>
+		<script src="js/startPoint.js"></script>
+	</body>
+</html>

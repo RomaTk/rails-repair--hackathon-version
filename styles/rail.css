@@ -1,0 +1,6 @@
+.rail{
+	image-rendering: pixelated;
+	display: block;
+	width:20vh;/* width of road */
+	height:20vh;/* width of road */
+}

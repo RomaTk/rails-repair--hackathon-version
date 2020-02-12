@@ -1,0 +1,44 @@
+.gameScreen{
+	position:fixed;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	width:100vw;
+	height:100vh;
+}
+.background{
+	width:calc((100vw - 20vh)/2);/*(100vw - size of road)/2*/
+	/*background-color:green;*/ /*change*/
+}
+
+.animatedBackground{
+	image-rendering: pixelated;
+}
+.animatedBackgroundSides{
+	display: block;
+	width:148.57vh;
+}
+.roadWidth{
+	width:20vh;
+	image-rendering: pixelated;
+}
+#centreBackground{
+	display: flex;
+	flex-direction:column;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+#leftBackground{
+	display: flex;
+	flex-direction:column;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+#rightBackground{
+	display: flex;
+	flex-direction:column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}

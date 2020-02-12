@@ -1,0 +1,14 @@
+#score{
+	position:fixed;
+	top:2vh;
+	right:2vh;
+	color:#E32636;
+	font-family: Score;
+}
+.scoreFont{
+	font-family: Score;
+}
+@font-face {
+	font-family: "Score";
+	src: url("fonts/score.ttf");
+}

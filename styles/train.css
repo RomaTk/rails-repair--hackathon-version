@@ -1,0 +1,10 @@
+.trainPositioning{
+	position:fixed;
+	width:40vh;
+	image-rendering: pixelated;
+	bottom:0px;
+	margin-left:-10vh;
+}
+#trainBurst{
+	opacity:0;
+}
